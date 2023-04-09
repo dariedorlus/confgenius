@@ -102,74 +102,12 @@ export const SessionsTable = (props) => {
             checkboxSelection
             disableRowSelectionOnClick
           />
-          {/* <Table>
-              <TableHead>
-                <TableRow>
-                  <TableCell padding="checkbox">
-                    <Checkbox
-                      checked={selectedAll}
-                      indeterminate={selectedSome}
-                      onChange={(event) => {
-                        if (event.target.checked) {
-                          onSelectAll?.();
-                        } else {
-                          onDeselectAll?.();
-                        }
-                      }}
-                    />
-                  </TableCell>
-                  <TableCell>Speaker Name</TableCell>
-                  <TableCell>Title</TableCell>
-                  <TableCell>Speaker Picture</TableCell>
-                  <TableCell>Category</TableCell>
-                  <TableCell>Status</TableCell>
-                  <TableCell>Time</TableCell>
-                  <TableCell>Room</TableCell>
-                  <TableCell>Floor</TableCell>
-                  <TableCell>Location</TableCell>
-                  <TableCell>Date</TableCell>
-                </TableRow>
-              </TableHead>
-              <TableBody>
-                {sessions.map((session) => {
-                  const isSelected = selected.includes(session.id);
-                  const sessionDate = format(new Date(session.date), "MM/dd/yyyy");
-                  return (
-                    <TableRow hover key={session.id} selected={isSelected}>
-                      <TableCell padding="checkbox">
-                        <Checkbox
-                          checked={isSelected}
-                          onChange={(event) => {
-                            if (event.target.checked) {
-                              onSelectOne?.(session.id);
-                            } else {
-                              onDeselectOne?.(session.id);
-                            }
-                          }}
-                        />
-                      </TableCell>
-                      <TableCell id="speaker-name">
-                        <Stack alignItems="center" direction="row" spacing={2}>
-                          <Avatar src={session.speakerPicture}>
-                            {getInitials(session.speakerName)}
-                          </Avatar>
-                          <Typography variant="subtitle2">{session.speakerName}</Typography>
-                        </Stack>
-                      </TableCell>
-                      <TableCell id="title">{session.title}</TableCell>
-                      <TableCell id="speaker-picture-url">{session.speakerPicture}</TableCell>
-                      <TableCell id="category">{session.category}</TableCell>
-                      <TableCell id="status">{session.status}</TableCell>
-                      <TableCell id="time">{session.time}</TableCell>
-                      <TableCell id="room">{session.room}</TableCell>
-                      <TableCell id="floor">{session.floor}</TableCell>
-                      <TableCell id="location">{session.location}</TableCell>
-                      <TableCell id="date">{sessionDate}</TableCell>
-                    </TableRow>
-                  );
-                })}
-              </TableBody>
-            </Table> */}
+          {/* <TableCell id="speaker-name">
+            <Stack alignItems="center" direction="row" spacing={2}>
+              <Avatar src={session.speakerPicture}>{getInitials(session.speakerName)}</Avatar>
+              <Typography variant="subtitle2">{session.speakerName}</Typography>
+            </Stack>
+          </TableCell> */}
         </Box>
       </Scrollbar>
     </Card>
