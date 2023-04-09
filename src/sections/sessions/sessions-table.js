@@ -41,7 +41,7 @@ const columns = [
     headerName: "Time",
     width: 200,
     editable: true,
-    type: "date",
+    // type: "date",
   },
   {
     field: "roomName",
