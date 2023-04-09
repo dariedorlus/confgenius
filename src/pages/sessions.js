@@ -106,7 +106,7 @@ const Page = () => {
             <SessionsSearch />
             <SessionsTable
               count={sessions.length}
-              items={sessionList}
+              sessions={sessions}
               onDeselectAll={customersSelection.handleDeselectAll}
               onDeselectOne={customersSelection.handleDeselectOne}
               onPageChange={handlePageChange}
